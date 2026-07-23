@@ -20,7 +20,9 @@ async function loadData(period){
 
     const json=await response.json();
 
-    masterData=json.data;
+    masterData = json.data.sort(
+        (a, b) => Number(b.nosharesAcquired) - Number(a.nosharesAcquired)
+    );
 
     buildTable(masterData);
 
