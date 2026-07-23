@@ -41,15 +41,30 @@ function buildTable(data){
 
 <td>
 
+<td>
+
 <div class="company">
 
-<img
-class="stock-chart"
-src="charts/${row.symbol}.png"
-onerror="this.src='charts/default.png'">
-onerror="this.src='logos/default.png'">
+    <img
+        class="stock-chart"
+        src="charts/${row.symbol}.png"
+        onerror="this.onerror=null; this.src='charts/default.png';">
 
-<div>
+    <div class="company-info">
+
+        <div class="company-name">
+            ${row.companyName}
+        </div>
+
+        <div class="symbol">
+            ${row.symbol}
+        </div>
+
+    </div>
+
+</div>
+
+</td>
 
 <div class="company-name">
 
