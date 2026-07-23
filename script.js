@@ -20,10 +20,10 @@ async function loadData(period){
 
     const json=await response.json();
 
-    masterData = json.data.sort(
-        (a, b) => Number(b.nosharesAcquired) - Number(a.nosharesAcquired)
+    masterData = json.data.sort((a, b) =>
+        parseInt(String(b.nosharesAcquired).replace(/,/g, ""), 10) -
+        parseInt(String(a.nosharesAcquired).replace(/,/g, ""), 10)
     );
-
     buildTable(masterData);
 
 }
