@@ -92,3 +92,27 @@ border-radius:8px;
     background:white;
 
 }
+.company-cell{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.stock-chart{
+    width:95px;
+    height:55px;
+    object-fit:cover;
+    border:1px solid #ddd;
+    border-radius:8px;
+    background:white;
+}
+
+.company-name{
+    font-size:17px;
+    font-weight:600;
+}
+
+.symbol{
+    color:#6c757d;
+    font-size:13px;
+}
