@@ -5,7 +5,7 @@ from pathlib import Path
 # Source folders
 # ===============================
 
-SOURCE_JSON = Path("/home/rahulshverma/StockDashboard/data")
+SOURCE_JSON = Path("/home/rahulshverma/StockDashboard/data/promoter_json/")
 SOURCE_CHARTS = Path("/home/rahulshverma/StockDashboard/charts")
 
 # ===============================
