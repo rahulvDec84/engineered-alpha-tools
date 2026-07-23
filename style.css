@@ -77,3 +77,18 @@ vertical-align:middle;
 border-radius:8px;
 
 }
+.stock-chart{
+
+    width:90px;
+
+    height:50px;
+
+    object-fit:contain;
+
+    border-radius:6px;
+
+    border:1px solid #ddd;
+
+    background:white;
+
+}
