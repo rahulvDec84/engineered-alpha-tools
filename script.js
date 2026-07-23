@@ -29,10 +29,16 @@ async function loadData(period){
 
 function buildTable(data){
 
-    let tbody=document.querySelector("tableBody");
+    let tbody = document.getElementById("tableBody");
+    
     console.log("tbody =", tbody);
-
-    tbody.innerHTML="";
+    
+    if (!tbody) {
+        console.error("tableBody not found!");
+        return;
+    }
+    
+    tbody.innerHTML = "";
 
     data.forEach(row=>{
 
