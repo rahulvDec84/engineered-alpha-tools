@@ -44,7 +44,9 @@ function buildTable(data){
 <div class="company">
 
 <img
-src="logos/${row.symbol}.png"
+class="stock-chart"
+src="charts/${row.symbol}.png"
+onerror="this.src='charts/default.png'">
 onerror="this.src='logos/default.png'">
 
 <div>
