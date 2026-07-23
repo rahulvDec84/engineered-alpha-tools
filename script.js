@@ -30,6 +30,7 @@ async function loadData(period){
 function buildTable(data){
 
     let tbody=document.querySelector("tableBody");
+    console.log("tbody =", tbody);
 
     tbody.innerHTML="";
 
