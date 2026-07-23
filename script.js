@@ -37,91 +37,47 @@ function buildTable(data){
 
         let tr=document.createElement("tr");
 
-        tr.innerHTML=`
+tr.innerHTML = `
 
 <td>
 
-<td>
+    <div class="company">
 
-<div class="company">
+        <img
+            class="stock-chart"
+            src="charts/${row.symbol}.png"
+            onerror="this.onerror=null; this.src='charts/default.png';">
 
-    <img
-        class="stock-chart"
-        src="charts/${row.symbol}.png"
-        onerror="this.onerror=null; this.src='charts/default.png';">
+        <div class="company-info">
 
-    <div class="company-info">
+            <div class="company-name">
+                ${row.companyName}
+            </div>
 
-        <div class="company-name">
-            ${row.companyName}
-        </div>
+            <div class="symbol">
+                ${row.symbol}
+            </div>
 
-        <div class="symbol">
-            ${row.symbol}
         </div>
 
     </div>
 
-</div>
-
 </td>
 
-<div class="company-name">
+<td>${row.promoterName}</td>
 
-${row.companyName}
+<td>${row.creditDateFrom}</td>
 
-</div>
+<td>${Number(row.nosharesAcquired).toLocaleString()}</td>
 
-<div class="symbol">
+<td>${row.persharesPrior}%</td>
 
-${row.symbol}
-
-</div>
-
-</div>
-
-</div>
-
-</td>
+<td>${row.persharesAfterAcq}%</td>
 
 <td>
-
-${row.promoterName}
-
-</td>
-
-<td>
-
-${row.creditDateFrom}
-
-</td>
-
-<td>
-
-${Number(row.nosharesAcquired).toLocaleString()}
-
-</td>
-
-<td>
-
-${row.persharesPrior}%
-
-</td>
-
-<td>
-
-${row.persharesAfterAcq}%
-
-</td>
-
-<td>
-
-<span class="badge-buy">
-
-Buy
-
-</span>
-
+    <span class="badge-buy">
+        Buy
+    </span>
 </td>
 
 `;
