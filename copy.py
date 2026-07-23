@@ -4,13 +4,14 @@ from pathlib import Path
 # ===============================
 # Source folders
 # ===============================
-SOURCE_JSON = Path("/home/rahul/StockDashboard/data")
-SOURCE_CHARTS = Path("/home/rahul/StockDashboard/charts")
+
+SOURCE_JSON = Path("/home/rahulshverma/StockDashboard/data")
+SOURCE_CHARTS = Path("/home/rahulshverma/StockDashboard/charts")
 
 # ===============================
 # GitHub repository folders
 # ===============================
-GITHUB_REPO = Path("/home/rahul/engineered-alpha-tools")
+GITHUB_REPO = Path("/home/rahulshverma/engineered-alpha-tools")
 DEST_JSON = GITHUB_REPO / "data"
 DEST_CHARTS = GITHUB_REPO / "charts"
 
