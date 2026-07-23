@@ -29,7 +29,7 @@ async function loadData(period){
 
 function buildTable(data){
 
-    let tbody=document.querySelector("#stockTable tbody");
+    let tbody=document.querySelector("tableBody");
 
     tbody.innerHTML="";
 
