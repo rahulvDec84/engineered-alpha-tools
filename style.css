@@ -1,0 +1,55 @@
+body{
+
+    background:#f5f7fb;
+
+}
+
+.summary-card{
+
+    border:none;
+
+    border-radius:12px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+
+}
+
+.summary-card h6{
+
+    color:#777;
+
+}
+
+.summary-card h3{
+
+    font-weight:bold;
+
+}
+
+table{
+
+    background:white;
+
+}
+
+thead{
+
+    position:sticky;
+
+    top:0;
+
+}
+
+.navbar-brand{
+
+    font-weight:bold;
+
+    font-size:1.4rem;
+
+}
+
+#searchInput{
+
+    border-radius:8px;
+
+}
