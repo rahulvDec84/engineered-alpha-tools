@@ -31,3 +31,12 @@ for file in SOURCE_CHARTS.glob("*.png"):
 
 print("✅ JSON files copied.")
 print("✅ Chart images copied.")
+
+import subprocess
+
+subprocess.run(["git", "-C", str(GITHUB_REPO), "add", "."])
+subprocess.run(["git", "-C", str(GITHUB_REPO), "commit", "-m", "Daily promoter update"])
+subprocess.run(["git", "-C", str(GITHUB_REPO), "pull", "--rebase", "origin", "main"])
+subprocess.run(["git", "-C", str(GITHUB_REPO), "push", "origin", "main"])
+
+print("✅ GitHub updated successfully.")
